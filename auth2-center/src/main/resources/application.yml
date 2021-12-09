@@ -1,0 +1,35 @@
+#logging:
+#  level:
+#    root: DEBUG
+logging:
+  level:
+    org.springframework: INFO #INFO
+    org.springframework.security: DEBUG
+spring:
+  application:
+    name: auth2-center
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.159:3306/security_oauth?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+server:
+  port: 8081
+
+#开启feign支持hystrix  (注意，一定要开启，旧版本默认支持，新版本默认关闭)
+# #修改调用超时时间（默认是1秒就算超时） 2020前的版本 用hystrix这个配置
+feign:
+  #  hystrix:
+  #    enabled: true
+  circuitbreaker:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.127:8761/eureka/
+

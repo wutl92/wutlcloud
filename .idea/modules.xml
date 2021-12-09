@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth2-center/auth2-center.iml" filepath="$PROJECT_DIR$/auth2-center/auth2-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model-center/model-center.iml" filepath="$PROJECT_DIR$/model-center/model-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sys-center/sys-center.iml" filepath="$PROJECT_DIR$/sys-center/sys-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tool-center/tool-center.iml" filepath="$PROJECT_DIR$/tool-center/tool-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-center/user-center.iml" filepath="$PROJECT_DIR$/user-center/user-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wutlcloud.iml" filepath="$PROJECT_DIR$/wutlcloud.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+server:
+  port: 8082
+
+#自定义
+auth2:
+  baseUrl: http://192.168.0.127:8081
+  clientId: client_1
+  clientSecret: 123456
+  scope: select
+spring:
+  application:
+    name: sys-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.159:3306/security_oauth?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  redis:
+    port: 6379
+    database: 2
+    host: 127.0.0.1
+    password: 123456
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-wait: -1ms
+#        max-idle: 8
+#        min-idle: 0
+    timeout: 5000ms
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.127:8761/eureka/
+#feign
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    org.springframework: INFO #INFO
+    org.springframework.security: DEBUG
+    org.springframework.data.redis: DEBUG
+    root: info
+    com.wutl: debug
